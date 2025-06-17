@@ -29,10 +29,15 @@
 ##  ディレクトリ構成
 
 timer
+
 ┣  timer.html
+
 ┣  timer.css
+
 ┣  timer.js
+
 ┣  study.jpg
+
 ┣  break.webp
 
 
