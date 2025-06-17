@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>勉強用タイマー</title>
+  <link rel="stylesheet" href="timer.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+  <div id="timer">25:00</div>
+  <div class="buttons">
+    <button onclick="startTimer()">
+        <span class="material-icons">play_arrow</span>
+    </button>
+    <button onclick="stopTimer()">
+        <span class="material-icons">pause</span>
+    </button>
+    <button onclick="resetTimer()">
+        <span class="material-icons">restart_alt</span>
+    </button>
+  </div>
+  <div class="mode-buttons">
+    <button onclick="switchToWork()">
+        <span class="material-icons">edit</span>
+    </button>
+    <button onclick="switchToBreak()">
+        <span class="material-icons">local_cafe</span> 
+    </button>
+    <button onclick="switchToStopwatch()">
+        <span class="material-icons">timer</span>
+    </button>
+    <button onclick="clearBackgroundImage()">
+        <span class="material-icons">auto_fix_normal</span>
+    </button>
+    <button onclick="toggleFullscreen()" id="fullscreenBtn">
+        <span class="material-icons">fullscreen</span>
+    </button>
+</div>
+<div class="customize" id="colorPickers">
+  <label for="bgColorPicker" id="bgColorLabel">背景色: </label>
+  <input type="color" id="bgColorPicker">
+
+  <label for="textColorPicker" id="textColorLabel">文字色: </label>
+  <input type="color" id="textColorPicker">
+</div>
+ <script src="timer.js"></script>
+</body>
+</html>
